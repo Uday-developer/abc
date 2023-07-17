@@ -1,7 +1,7 @@
 <?php
 // Database connection details
 $servername = "localhost";
-$username = "Uday";
+$username = "Admin";
 $password = "123456";
 $dbname = "mana movies";
 
