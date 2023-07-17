@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Login Form</title>
+    <script>
+        function validateForm() {
+            var loginID = document.forms["f1"]["t1"].value;
+            var password = document.forms["f1"]["t2"].value;
+
+            if (loginID.length === 0) {
+                alert("Please enter a Login ID.");
+                return false;
+            }
+
+            if (password.length === 0) {
+                alert("Please enter a password.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body bgcolor="white">
+    <basefont face="Cambria" size="4">
+    <br>
+    <center>
+        <font face="Times new roman" size="7" color="orange">
+            <b>Enter Login Details</b>
+        </font>
+    </center>
+    <form name="f1" method="post" action="right.html" onsubmit="return validateForm()">
+        <table align="center" width="100" height="150" cellspacing="15">
+            <tr>
+                <td><b>Login ID:</b></td>
+                <td><input type="text" name="t1"></td>
+            </tr>
+            <tr>
+                <td><b>Password:</b></td>
+                <td><input type="password" name="t2"></td>
+            </tr>
+            <tr align="center">
+                <td><input type="submit" name="b1" value="Submit"></td>
+                <td><input type="reset" name="b2" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

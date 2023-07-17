@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    background-color: silver;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(144, 28, 28);
+  }
+  
+  a:hover {
+    color: rgb(47, 197, 164);
+  }
+  
